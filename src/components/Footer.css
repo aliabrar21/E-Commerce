@@ -1,0 +1,116 @@
+/* Footer.css */
+
+/* Basic Styling for Footer */
+.footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 40px 20px; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    flex: 1; /* Logo section takes up the left side */
+}
+
+.footer-logo h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.footer-links {
+    flex: 2; /* Links section takes up the center */
+    display: flex;
+    justify-content: center; /* Center the links */
+}
+
+.footer-link {
+    font-size: 1rem;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-social {
+    flex: 1; /* Social media links take up the right side */
+    display: flex;
+    justify-content: flex-end; /* Align social icons to the right */
+}
+
+.social-icon {
+    font-size: 1rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack the content vertically on smaller screens */
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .footer-link {
+        margin: 5px 0;
+    }
+
+    .footer-social {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .social-icon {
+        margin: 5px 0;
+    }
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .footer-logo h2 {
+        font-size: 1.6rem; /* Smaller logo font on mobile */
+    }
+
+    .footer-link {
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        font-size: 0.9rem;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+    }
+}

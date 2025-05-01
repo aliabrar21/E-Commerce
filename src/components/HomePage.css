@@ -1,0 +1,106 @@
+/* HomePage.css */
+
+/* Main container for the page */
+.home {
+    display: flex;
+    flex-direction: column;  /* Stack content and footer vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center;     /* Center content horizontally */
+    min-height: 100vh;       /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px;
+}
+
+/* Content section */
+.content {
+    max-width: 900px; /* Limit content width */
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center align text inside the content */
+}
+
+/* Header (main title) */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph content */
+p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.shop-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block; /* Allow the button to behave like a block element */
+}
+
+.shop-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    width: 100%;  /* Ensure footer spans the full width */
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .content {
+        max-width: 600px; /* Adjust content width for smaller screens */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .shop-button {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Responsive Design for Phones */
+@media (max-width: 480px) {
+    .content {
+        max-width: 100%; /* Full width on small screens */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .shop-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}

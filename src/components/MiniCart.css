@@ -1,0 +1,51 @@
+/* Mini Cart */
+/* MiniCart.css or inside Header.css if you're combining */
+.minicart {
+    position: absolute;
+    top: 60px; /* below the header bar */
+    right: 10px;
+    width: 300px;
+    max-width: 90%; /* responsive on small screens */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 20; /* make sure it's above page, below nav toggle if needed */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.mini-cart h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.mini-cart-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.mini-cart button {
+    width: 100%;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 8px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.mini-cart button:hover {
+    background-color: #1f618d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mini-cart {
+        width: 90%;
+        right: 5%;
+    }
+}
